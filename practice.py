@@ -8,9 +8,11 @@ for i in range(1, n+1):
 n= int(input())
 sum = 0
 temp = n
+power = len(str(n))
+
 while temp > 0:
     digit = temp % 10
-    sum += digit ** 3
+    sum += digit ** power
     temp //= 10
 if n == sum:
     print(True)
